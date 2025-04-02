@@ -1,4 +1,7 @@
 # NUIST Quiz Game in Python
+# Author: Xuanru Guo
+# Date: 2025/4/2
+# Student Number: 20109677
 def quiz():
 	print("Welcome to the Animal Quiz!")
 	print("Answer the following questions:")
@@ -14,6 +17,7 @@ def quiz():
 	# Ask questions
 	for i in range(len(questions)):
 		user_answer = input(questions[i]).strip().lower()
+		# Judge the answer
 		if user_answer == answers[i]:
 			print("Correct!")
 			score += 1
